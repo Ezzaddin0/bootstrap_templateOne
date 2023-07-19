@@ -1,0 +1,281 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+:root {
+    --yellow-color: #ffcc01;
+    --bule-color: #1f373d;
+    --bg-color: #f6f5f4;
+}
+.navbar-brand {
+    width: 100px;
+}
+@media (max-width: 767px) {
+    .navbar-brand {
+        width: 80px;
+        display: block;
+    }
+}
+.collapse.navbar-collapse ul li a{
+    color: var(--bule-color);
+}
+.right-box button {
+    background-color: var(--yellow-color);
+    color: var(--bule-color);
+    transition: 0.3s;
+}
+.right-box button:hover {
+    background-color: var(--yellow-color);
+    color: white;
+}
+@media (max-width: 767px) {
+    nav .container .col {
+        position: absolute;
+        top: 58px;
+        background-color: white;
+        z-index: 9;
+    }
+    nav .container .navbar-collapse.show {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* align-items: center; */
+    }
+    nav .container ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.landing {
+    height: calc(100vh - 66px);
+}
+.landing .container .img-box {
+    height: calc(100% - 6%);
+}
+.landing .container .img-box .down {
+    rotate: -90deg;
+    transform: translate(50%);
+    font-size: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--bule-color);
+}
+@media (max-width: 991px) {
+    .landing .container .img-box .down {
+        display: none;
+    }
+}
+.landing .container img {
+    width: 85% !important;
+}
+@media (max-width: 991px) {
+    .landing .container .img-box img {
+        width: 100% !important;
+    }
+}
+.landing .container .img-box span {
+    background-color: var(--yellow-color);
+    padding: 1rem;
+}
+@media (max-width: 767px) {
+    .landing .container .img-box span {
+        padding: 0.5rem;
+    }
+}
+.landing .container .img-box span svg {
+    color: white;
+}
+.landing .container .box {
+    width: 75%;
+}
+@media (max-width: 767px) {
+    .landing .container .box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.landing .container .box > p {
+    font-size: 54px;
+    width: 75%;
+}
+@media (max-width: 767px) {
+    .landing .container .box > p {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 767px) {
+    .landing .container .box > p {
+        font-size: 22px;
+    }
+}
+.landing .container form .input-group::before {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    width: 20px;
+    height: 20px;
+    z-index: 50000;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #ccc;
+    transform: translateY(-50%);
+}
+.landing .container form input[type="button"] {
+    background-color: var(--yellow-color);
+    color: var(--bule-color);
+}
+.landing .container form {
+    width: 50%;
+}
+@media (max-width: 767px) {
+    .landing .container form {
+        width: 75%;
+    }
+}
+/* start our company */
+.company .container .row:first-child p {
+    font-size: calc(1rem - 5px);
+    line-height: 2;
+}
+.company .container .row:last-child .row div {
+    background-color: #f6f5f4;
+    margin-bottom: 20px;
+}
+.company .container .row:last-child .row div h2 {
+    color: var(--yellow-color);
+}
+/* end our company */
+/* start appartment */
+/* .appartment .container .row .card .card-img-top {
+    max-height: 433.31px;
+}
+.appartment .container .row .card img {
+    height: 100%;
+} */
+.appartment {
+    background-color: #f6f5f4;
+}
+@media (max-width: 767px) {
+    .appartment .container h2 {
+        text-align: center;
+    }
+}
+.appartment .container .row .card-title {
+    font-size: 14px;
+}
+.appartment .container .row .price {
+    color: var(--yellow-color);
+}
+.appartment .container .row .info {
+    font-size: 12px;
+}
+.appartment .container form .input-group::before {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    width: 20px;
+    height: 20px;
+    z-index: 50000;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #ccc;
+    transform: translateY(-50%);
+}
+.appartment .container form .search-btn {
+    background-color: var(--yellow-color);
+    color: var(--bule-color);
+}
+.appartment .container form {
+    width: 60%;
+}
+@media (max-width: 767px) {
+    .appartment .container form {
+        width: 75%;
+    }
+}
+.appartment .container .footer form .foot-btn {
+    background-color: #ffffff;
+    font-size: 13px;
+}
+/* end appartment */
+/* start work */
+.work .container .info p {
+    font-size: 14px;
+}
+.work .container .info .row {
+    margin: 50px 0;
+}
+.work .container .info .row div {
+    background-color: var(--yellow-color);
+    color: #ffffff;
+    padding: 150px 90px 50px;
+}
+.work .container .info .row div span {
+    font-size: 180px;
+    transform: translate(-50px, -100px);
+}
+.work .container .info .row div p.h3::before {
+    content: "01";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    z-index: 200;
+    transform: translateY(-50%);
+}
+/* end work */
+/* start agent */
+.agent {
+    background-color: #f6f5f4;
+}
+.agent .container .row .card .card-text {
+    color: var(--yellow-color);
+    font-size: 12px;
+}
+/* end agent */
+/* start tour */
+.tour .container .row div .img-box span {
+    background-color: var(--yellow-color);
+    padding: 20px 35px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 6;
+    transform: translate(-80%, 50%);
+}
+.tour .container .row div .img-box-2 span {
+    background-color: var(--yellow-color);
+    padding: 20px 35px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 6;
+    transform: translate(0%, 50%);
+}
+@media (max-width: 767px) {
+    .tour .container .row div span {
+        display: none;
+    }
+    .tour .container .row {
+        text-align: center;
+    }
+}
+.tour .container .row .last-btn {
+    background-color: var(--bule-color);
+    color: var(--bg-color);
+}
+/* end agent */
+/* start footer */
+footer {
+    background-color: var(--bule-color);
+}
+footer .container .row a {
+    color: #ffffff;
+}
+@media (max-width: 767px) {
+    footer .container .row.py-3 {
+        text-align: center;
+    }
+}
+/* end footer */
